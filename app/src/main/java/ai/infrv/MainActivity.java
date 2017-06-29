@@ -35,7 +35,7 @@ public class MainActivity extends Activity
 		registerRVLoadMore(recyclerView);
     }
 	private void registerRVLoadMore(RecyclerView r){
-		r.setOnScrollListener(new RecyclerView.OnScrollListener(){
+		r.addOnScrollListener(new RecyclerView.OnScrollListener(){
 				@Override
 				public void onScrolled(android.support.v7.widget.RecyclerView recyclerView, int dx, int dy)  {
 					int akhir=lmgr.findLastVisibleItemPosition();
